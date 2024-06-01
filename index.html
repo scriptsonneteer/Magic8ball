@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Defines the document type and language -->
+<head>
+    <meta charset="UTF-8"> <!-- Sets the character encoding to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- Ensures proper rendering on all devices -->
+    <title>Magic Eight Ball</title> <!-- Sets the title of the webpage -->
+    <link href=
+    "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" 
+    rel="stylesheet" as="style" onload="this.onload=null;this.rel='stylesheet'"> 
+    <!-- Links to the Open Sans font with lazy-loading -->
+    <link rel="stylesheet" href="styles.css"> <!-- Links to the external CSS file -->
+</head>
+<body>
+    <div class="container"> <!-- Container for centering content -->
+        <div class="eight-ball"> <!-- Outer circle of the Magic Eight Ball -->
+            <div class="eight-ball-inner" id="eightBallInner"> 
+                <!-- Inner circle for displaying answers -->
+                <div class="answer" id="answer">Ask me anything...</div> 
+                <!-- Placeholder text for the answer -->
+            </div>
+        </div>
+        <button class="ask-button" id="askButton" 
+        onclick="shakeEightBall()">Ask the Magic Eight Ball</button> 
+        <!-- Button to trigger the shakeEightBall function -->
+        <div class="disclaimer"> <!-- Disclaimer section -->
+            Magic 8 Ball cannot change the physical reality, the past, present or the future. 
+            It will only tell you the truth you want to or need to hear. 
+            You will also not always get the right answer – which makes it trustworthy. 
+            Just like real life, most of the times it’s a yes, other times a no,
+            and sometimes it is also a non-committal response.
+        </div>
+    </div>
+    <script src="script.js"></script> <!-- Links to the external JavaScript file -->
+</body>
+</html>
